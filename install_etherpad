@@ -21,7 +21,7 @@ echo
 #fi
 
 # Get domain
-echo "Please specify a domain to use to access FIR (Example: etherpad.example.com) and press [ENTER]:"
+echo "Please specify a domain to use to access Etherpad (Example: etherpad.example.com) and press [ENTER]:"
 read DOMAIN_NAME
 
 # Enable etherpad site
@@ -58,7 +58,7 @@ echo "Done!"
 echo
 echo "Etherpad should now be accessible at https://$DOMAIN_NAME"
 echo
-echo "If you haven't already, make sure to run so-allow to allow an analyst access to port 443 to access FIR and other tools."
+echo "If you haven't already, make sure to run so-allow to allow an analyst access to port 443 to access Etherpad and other tools."
 echo
 echo "Also keep in mind, if DNS configuration is not in place for the provided domain, you will"
 echo "need to place an entry in the client's host(s) file:"
