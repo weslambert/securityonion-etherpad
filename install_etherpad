@@ -6,7 +6,7 @@ header "Cloning repo..."
 [ -d ~/securityonion-etherpad ] && rm -rf ~/securityonion-etherpad
 git clone https://github.com/weslambert/securityonion-etherpad
 
-# Create FIR dir
+# Create etherpad dir
 [ -d ~/etherpad ] && rm -rf ~/etherpad
 mkdir ~/etherpad
 
@@ -49,7 +49,7 @@ if docker ps -a | grep so-etherpad > /dev/null; then
         docker stop so-etherpad
         docker ps -a | grep "so-etherpad" | awk '{print $1}' | xargs docker rm
 fi
-docker run -it -d --name=so-etherpad -p 8001:8001 wlambert/so-etherpad && \
+docker run -it -d --name=so-etherpad -p 9001:9001 wlambert/so-etherpad && \
 echo
 
 # Done
